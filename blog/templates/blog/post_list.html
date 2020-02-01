@@ -1,1 +1,8 @@
-<html><body><h1>World Worthy Travel Blog</h1><strong>Info about our 2018-19 trip around the world</strong><p>hi there!</p><p>Great job, Charmaine! It works! :)</p></body></html>
+<html><body><h1>World Worthy Travel Blog</h1><strong>Info about our 2018-19 trip around the world</strong><p>hi there!</p><p>Great job, Charmaine! It works! :)</p>
+{% for post in posts %}
+    <div>
+        <p>published: {{ post.published_date }}</p>
+        <h2><a href="">{{ post.title }}</a></h2>
+        <p>{{ post.text|linebreaksbr }}</p>
+    </div>
+{% endfor %}</body></html>

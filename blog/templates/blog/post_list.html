@@ -1,24 +1,9 @@
-{% load static %}
 <html>
 <head>
     <title>World Worthy Travel Blog</title>
-    <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="{% static 'css/blog.css' %}">
-</head>
+    </head>
 <body>
-<div class="marginleft">
     <h1>World Worthy Travel Blog</h1>
 <strong>Info about our 2018-19 trip around the world</strong>
-</div>
-{% for post in posts %}
-    <div>
-        <p>published: {{ post.published_date }}</p>
-        <h2><a href="">{{ post.title }}</a></h2>
-        <p>{{ post.text|linebreaksbr }}</p>
-    </div>
-
-{% endfor %}
 </body>
 </html>
